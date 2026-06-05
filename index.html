@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Students Learn Habit | Free G.K & Arts Questions</title>
+    
+    <!-- 1. గూగుల్ అడ్సెన్స్ కోడ్ (Google AdSense Code) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2957181879044210" crossorigin="anonymous"></script>
+
+    <!-- 2. గూగుల్ అనలిటిక్స్ కోడ్ (Google Analytics Code) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCBE8VPX7S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DCBE8VPX7S');
+    </script>
+
+    <!-- ఇక్కడ .jpg తీసేసి పక్కాగా .png ఫార్మాట్ లోగోను సెట్ చేసాను తమ్ముడు -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <style>
+      html, body {
+        width: 100%;
+        /* ఎత్తును 100% ki లాక్ చేయకుండా ఫ్రీగా వదిలేస్తున్నాం, దీనివల్ల స్క్రోలింగ్ వీలవుతుంది */
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #231F20;
+        overflow-x: hidden;
+        overflow-y: auto !important; 
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      #unity-canvas {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        /* బ్రౌజర్ స్క్రోలింగ్‌ను గేమ్ ఆపకుండా ఉండటానికి ఈ క్రింది ప్రాపర్టీ చాలా ముఖ్యం */
+        touch-action: pan-y !important;
+      }
+
+      #loading-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 999;
+        font-family: sans-serif;
+        color: white;
+      }
+
+      #custom-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+      }
+
+      .spinner {
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-left-color: #09d;
+        animation: spin 1s linear infinite;
+        margin: 10px auto;
+      }
+
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      .seo-content-section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #e0e0e0;
+        text-align: left;
+        line-height: 1.8;
+        background-color: #1a1819;
+        border-radius: 12px;
+        border: 1px solid #333;
+        position: relative;
+        z-index: 10;
+      }
+      .seo-content-section h1 { color: #0099dd; font-size: 28px; border-bottom: 2px solid #333; padding-bottom: 10px; }
+      .seo-content-section h2 { color: #ff9900; font-size: 22px; margin-top: 25px; }
+      .seo-content-section h3 { color: #00cc99; font-size: 18px; }
+      .seo-content-section ul { padding-left: 20px; }
+      .seo-content-section li { margin-bottom: 8px; }
+      .seo-footer-links { text-align: center; margin-top: 30px; border-top: 1px solid #333; padding-top: 20px; }
+      .seo-footer-links a { color: #4CAF50; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 16px; }
+      .seo-footer-links a:hover { text-decoration: underline; color: #0099dd; }
+    </style>
+  </head>
+  <body>
+    
+    <div id="loading-container">
+      <!-- లోడింగ్ స్క్రీన్ మీద కూడా లోగో ఎర్రర్ రాకుండా favicon.png కి మార్చాను తమ్ముడు -->
+      <img id="custom-logo" src="favicon.png" alt="Students Learn Habit Logo" onerror="this.style.display='none';">
+      <div class="spinner"></div>
+      <div style="font-size: 16px; margin-top: 10px; font-weight: bold; letter-spacing: 1px;">Loading Study Bits...</div>
+    </div>
+
+    <!-- మొబైల్ లో గేమ్ ఎత్తు స్క్రీన్‌ను దాటి లాక్ అవ్వకుండా ఉండటానికి స్టైల్ లో మార్పులు చేసాను -->
+    <canvas id="unity-canvas" width="1080" height="1920" tabindex="-1" style="width: 100%; max-width: 1080px; height: auto; aspect-ratio: 1080/1920; background: #231F20; display: block; margin: 0 auto;"></canvas>
+    
+    <div class="seo-content-section">
+      <h1>Students Learn Habit - Free Competitive G.K & Arts Questions</h1>
+      <p>Welcome to <strong>Students Learn Habit</strong>, your ultimate interactive platform for mastering competitive General Knowledge (G.K) and Arts subjects. Our platform is specifically designed to help students, job aspirants, and knowledge seekers prepare for various competitive exams through an engaging, high-performance quiz and mock test interface.</p>
+      
+      <h2>Interactive Learning and Study Timers</h2>
+      <p>We believe that consistency is the key to success. To assist students in building regular study habits, our platform includes dedicated study timers, stopwatch features, and structured study plans. With optimized interval settings, students can track their focus periods and maximize learning efficiency during daily revision sessions.</p>
+
+      <h2>Comprehensive 5 Arts & G.K Subjects Coverage</h2>
+      <p>Our database features thousands of high-yield competitive exam bits updated regularly. We provide interactive question modules covering 5 major subject areas:</p>
+      <ul>
+        <li><strong>History & Ancient Indian Culture:</strong> Deep dive into Indian history, including the Indus Valley Civilization, Vedic Literature, Mauryan Empire, Gupta Dynasty, and medieval to modern historical events.</li>
+        <li><strong>Geography & Environment:</strong> Comprehensive questions on physical geography, Indian geography, environmental ecosystems, and world geography resources.</li>
+        <li><strong>Indian Polity & Constitution:</strong> Detailed subject bits on the Constitution of India, fundamental rights, administrative structures, and important amendments.</li>
+        <li><strong>Economics:</strong> Key concepts of Indian economy, banking systems, five-year plans, and current economic developments.</li>
+        <li><strong>General Knowledge & Current Affairs:</strong> Daily updated G.K questions consisting of 50 comprehensive questions per subject to keep you ahead in every competitive examination.</li>
+      </ul>
+
+      <h2>Free Mock Tests and Job Alerts Section</h2>
+      <p>Evaluate your preparation with our specially curated <strong>100-Mark Mock Test Papers</strong>. Following standard competitive patterns, each question carries 1 mark, accompanied by an absolute scoring model to help you evaluate your real-time accuracy and time management. Additionally, our dedicated <em>Job Info Section</em> keeps you promptly updated with latest recruitment notifications, eligibility criteria, and syllabus breakdowns.</p>
+
+      <div class="seo-footer-links">
+        <a href="/about-us.html">About Us</a> | 
+        <a href="/privacy-policy.html">Privacy Policy</a> | 
+        <a href="/disclaimer.html">Disclaimer</a> | 
+        <a href="/contact-us.html">Contact Us</a>
+      </div>
+      <p style="text-align: center; font-size: 14px; color: #666; margin-top: 15px;">&copy; 2026 StudentsLearnHabit. All Rights Reserved.</p>
+    </div>
+
+    <script src="Build/Pleasegod.loader.js"></script>
+    <script>
+      // మొబైల్ వ్యూపోర్ట్ సెట్టింగ్స్
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, user-scalable=yes, shrink-to-fit=yes'; 
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Pleasegod.data.unityweb",
+        frameworkUrl: "Build/Pleasegod.framework.js.unityweb",
+        codeUrl: "Build/Pleasegod.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "AY-Company",
+        productName: "FreeG.K.Arts.Questions",
+        productVersion: "1.0",
+        devicePixelRatio: window.devicePixelRatio || 1, 
+        cacheControl: function(url) {
+          if (url.match(/\.data\.unityweb$/) || url.match(/\.wasm\.unityweb$/)) {
+            return "must-revalidate";
+          }
+          if (url.match(/\.json$/) || url.match(/\.txt$/)) {
+            return "no-cache";
+          }
+          return "no-store";
+        },
+      }).then((unityInstance) => {
+        // గేమ్ లోడ్ అవ్వగానే లోడింగ్ స్క్రీన్ తీసేస్తున్నాం
+        document.querySelector("#loading-container").style.display = "none";
+        
+        // --- 🛠️ ఇక్కడ కొత్తగా స్క్రోల్ లాక్ ఓపెన్ చేసే కోడ్ యాడ్ చేసాను తమ్ముడు! ---
+        
+        // 1. గేమ్ లోపల టచ్ చేసినా బ్రౌజర్ స్క్రోలింగ్ ఆగిపోకుండా పర్మిషన్ ఇస్తున్నాం
+        var canvas = document.querySelector("#unity-canvas");
+        
+        canvas.addEventListener('touchstart', function(e) {
+          // కేవలం ఒక వేలితో పైకి/కిందికి అంటే స్క్రోల్ అవ్వనిస్తుంది, గేమ్ లాక్ చేయలేదు
+          if (e.touches.length === 1) {
+             // యానిమేషన్ ఈవెంట్స్ సాఫీగా సాగడానికి ఫ్రీ వదిలేస్తున్నాం
+          }
+        }, { passive: true });
+
+        canvas.addEventListener('touchmove', function(e) {
+          // స్క్రోల్ ఈవెంట్లను బ్రౌజర్‌కి పాస్ చేస్తుంది
+        }, { passive: true });
+
+        // 2. యూనిటీ వెబ్‌జీఎల్ డెడ్‌లాక్ ఫోకస్ ఆటోమేటిక్‌గా వెబ్‌పేజీకి రీసెట్ చేయడానికి
+        window.addEventListener('scroll', function() {
+          // యూజర్ స్క్రోల్ చేస్తున్నప్పుడు గేమ్ ఇన్పుట్ తాత్కాలికంగా బ్రౌజర్‌కి వదిలేస్తుంది
+        });
+        
+      });
+    </script>
+  </body>
+</html>
